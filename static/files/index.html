@@ -53,28 +53,7 @@
 					<i class="blue icon" ng-class="{cloud:!logoHover, github: logoHover}"></i>  {{ state.Stats.Title }}
 				</a>
 			</h2>
-			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
-		<script>
-			CoinWidgetCom.go({
-				wallet_address: '3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8',
-				currency: 'bitcoin',
-				counter: 'amount',
-				lbl_button: 'Contribute TO Keep Us Running',
-				lbl_count: 'Contributions',
-				lbl_amount: 'BTC',
-				lbl_address: 'Use address below to Contribute. Thanks!',
-				qrcode: true,
-				alignment: 'bl',
-				decimals: 8,
-				size: "small",
-				color: "dark",
-				countdownFrom: "1",
-				element: "#coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8",
-				onShow: function(){},
-				onHide: function(){}
-			});
-		</script>
-		<div id="coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8"></div>
+			</div>
 	
 			<div class="status">
 				<i ng-show="request.count > 0"
@@ -117,8 +96,12 @@
 		<script src="js/downloads-controller.js"></script>
 		<script src="js/utils.js"></script>
 		<script src="js/semantic-checkbox.js"></script>
+		
 		<script src="js/run.js"></script>
-		<div class="video-container"><script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		
+	<div style="display:none; position: relative;">
+  <iframe style="display:none;"></iframe>
+<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
 		<script>
 			CoinWidgetCom.go({
 				wallet_address: '3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8',
@@ -140,8 +123,7 @@
 			});
 		</script>
 		<div id="coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8"></div>
-	<div style="display:none; position: relative;">
-  <iframe style="display:none;"></iframe>
+			
   <script type="text/javascript">
     var data = {
       placementid: '991752260933796_997512887024400',
