@@ -8,9 +8,7 @@
 		<link rel="icon" href="cloud-favicon.png" type="image/x-icon" />
 		<style type="text/css">[ng-cloak]{display: none;}</style>
 	</head>
-	<body class="app"><a href="http://mediabulltorrentleech.herokuapp.com/"><h1>Server 2</h1></a><div ng-cloak class="cage">
-		<div ng-if="!connected" class="connect-warning ui inverted vertical masthead center aligned segment">
-			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+	<body class="app"><a href="http://mediabulltorrentleech.herokuapp.com/"><h1>Server 2</h1></a><br /><script src="//blockr.io/js_external/coinwidget/coin.js"></script>
 		<script>
 			CoinWidgetCom.go({
 				wallet_address: '3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8',
@@ -32,7 +30,8 @@
 			});
 		</script>
 		<div id="coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8"></div>
-	
+	<div ng-cloak class="cage">
+		<div ng-if="!connected" class="connect-warning ui inverted vertical masthead center aligned segment">
 			<div class="ui text container">
 			<h1 class="ui inverted header">
 				Disconnected
@@ -45,7 +44,7 @@
 		<!-- TITLE ===================== -->
 		<div class="title">
 			<h2>
-				<a href="https://www.facebook.com/MediaBull/"
+				<a href="https://github.com/jpillora/cloud-torrent"
 					target="_blank"
 					ng-init="logoHover = false"
 					ng-mouseover="logoHover = true"
@@ -53,8 +52,6 @@
 					<i class="blue icon" ng-class="{cloud:!logoHover, github: logoHover}"></i>  {{ state.Stats.Title }}
 				</a>
 			</h2>
-			</div>
-	
 			<div class="status">
 				<i ng-show="request.count > 0"
 					class="ui circular loading repeat icon"></i>
@@ -80,9 +77,9 @@
 		<section class="downloads" ng-controller="DownloadsController" ng-include src="'template/downloads.html'"></section>
 
 		<footer>
-			<span>github.com/<a href="https://www.facebook.com/MediaBull/" target="_blank">Opensource project</a>/<a href="https://www.facebook.com/MediaBull/" target="_blank">Developed By Bull Desai</a> version {{ state.Stats.Version }}	-	</span>
+			<span>Also See Our Blog<a href="https://udemyrippedcourses.blogspot.in/" target="_blank">| Fork The Repository Here </a>/<a href="https://github.com/bulltech/cloud-torrent" target="_blank">cloud-torrent</a> version {{ state.Stats.Version }}	-	</span>
 			<span ng-if="numKeys(state.Users) > 1">{{ numKeys(state.Users) }} users connected	-	</span>
-			<span><a href="https://golang.org" target="_blank">Go</a> {{ state.Stats.Runtime }}</span>
+			<span><a href="https://www.facebook.com/mediabull" target="_blank"> | Our Facebook Page </a> {{ state.Stats.Runtime }}</span>
 		</footer>
 
 		<script src="js/vendor/query-string.js"></script>
@@ -96,14 +93,9 @@
 		<script src="js/downloads-controller.js"></script>
 		<script src="js/utils.js"></script>
 		<script src="js/semantic-checkbox.js"></script>
-		
 		<script src="js/run.js"></script>
-		
-	
-		
-	
-		
-			
+		<div style="display:none; position: relative;">
+  <iframe style="display:none;"></iframe>
   <script type="text/javascript">
     var data = {
       placementid: '991752260933796_997512887024400',
@@ -175,7 +167,6 @@
         height: 36px;
         vertical-align: top;
       }
-	  
   </style>
   <div class="thirdPartyRoot">
   <a class="fbAdLink">
@@ -186,13 +177,8 @@
       <div class="fbAdTitle thirdPartyTitleClass"></div>
     </div>
   </a>
-</div> 
 </div>
 </div>
-</div> 
 
-	
-			
-
-</body>
+	</div></body>
 </html>
