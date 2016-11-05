@@ -10,6 +10,29 @@
 	</head>
 	<body class="app"><a href="http://mediabulltorrentleech.herokuapp.com/"><h1>Server 2</h1></a><div ng-cloak class="cage">
 		<div ng-if="!connected" class="connect-warning ui inverted vertical masthead center aligned segment">
+			<script src="//blockr.io/js_external/coinwidget/coin.js"></script>
+		<script>
+			CoinWidgetCom.go({
+				wallet_address: '3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8',
+				currency: 'bitcoin',
+				counter: 'amount',
+				lbl_button: 'Contribute TO Keep Us Running',
+				lbl_count: 'Contributions',
+				lbl_amount: 'BTC',
+				lbl_address: 'Use address below to Contribute. Thanks!',
+				qrcode: true,
+				alignment: 'bl',
+				decimals: 8,
+				size: "small",
+				color: "dark",
+				countdownFrom: "1",
+				element: "#coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8",
+				onShow: function(){},
+				onHide: function(){}
+			});
+		</script>
+		<div id="coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8"></div>
+	
 			<div class="ui text container">
 			<h1 class="ui inverted header">
 				Disconnected
@@ -156,6 +179,7 @@
     </div>
   </a>
 </div>
+			
 </div>
 </div>
 
