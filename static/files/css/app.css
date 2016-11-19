@@ -141,3 +141,23 @@ table.tcld .name {
 	width:100%;
 	height:100%;
 }
+
+ #.coinwidget-bitcoin-3DfZgFAHi1LZyV8CAi3gnnAJJ87eJ5Wtu8 {
+  margin:0 auto;
+float:center;
+border:solid 3px #F37735;
+border-style:dashed;
+  }
+  .server2{
+  font-family:Helvetica,sans-serif;
+  color:#ffcf3f;
+  float:center;
+border:solid 1px #e15d5d;
+border-style:dashed;
+  }
+  .ourblog{
+  font-family:Helvetica,sans-serif;
+  color:#D6FB87;
+  float:center;
+border:solid 2px #F37735;
+border-style:dashed;
