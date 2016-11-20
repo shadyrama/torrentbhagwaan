@@ -1,32 +1,22 @@
 {
-	"name": "cloud-torrent",
-	"website": "https://www.facebook.com/MediaBull/",
-	"repository": "https://github.com/jpillora/cloud-torrent",
-	"env": {
-		"TITLE": {
-			"description": "Optionally set the title of this instance (defaults to 'Cloud Torrent')",
-			"required": false
+	"name": "peerflix-server",
+	"description": "Streaming torrent client for node.js with web ui.",
+	"repository":  "https://github.com/asapach/peerflix-server",
+	"logo" : "https://camo.githubusercontent.com/3ca7ab2201d344d79310e5d436a0e7ad8e5ba97d/68747470733a2f2f63646e2e7261776769742e636f6d2f617361706163682f70656572666c69782d7365727665722f6d61737465722f6170702f696d616765732f6c6f676f2e737667",
+	"keywords": [
+		"bittorrent",
+		"torrent",
+		"stream",
+		"peerflix",
+		"server",
+		"web"
+	],
+	"buildpacks" : [
+		{
+			"url" : "https://github.com/abecadel/heroku-buildpack-nodejs-grunt-bower"
 		},
-		"AUTH": {
-			"description": "Optional HTTP authentication in the form user:password",
-			"required": false
-		}
-	}
+    {
+      "url" : "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+	]
 }
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '991752260933796',
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-  };
-
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "//connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
